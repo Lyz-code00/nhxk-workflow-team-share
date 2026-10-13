@@ -1,0 +1,39 @@
+.weekly-form-surface {
+  --weekly-single-control-width: calc((100% - 336px) / 3);
+}
+
+.weekly-form-surface [data-field-wrap="项目标题"] > .unit {
+  width: min(100%, var(--weekly-single-control-width));
+  justify-self: start;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+}
+
+.weekly-form-surface [data-field-wrap="时间区间"] > .date-range-input {
+  display: grid;
+  width: 100%;
+  min-width: 0;
+  grid-template-columns: minmax(0, var(--weekly-single-control-width)) max-content minmax(0, var(--weekly-single-control-width));
+  justify-content: start;
+  align-items: center;
+  gap: 12px;
+}
+
+.weekly-form-surface [data-field-wrap="时间区间"] .date-range-input > input[type="date"] {
+  width: 100%;
+  min-width: 0;
+  min-height: 38px;
+}
+
+@media (max-width: 1200px) {
+  .weekly-form-surface { --weekly-single-control-width: calc((100% - 168px) / 2); }
+}
+
+@media (max-width: 620px) {
+  .weekly-form-surface { --weekly-single-control-width: 100%; }
+  .weekly-form-surface [data-field-wrap="时间区间"] > .date-range-input {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+  .weekly-form-surface [data-field-wrap="时间区间"] .date-range-input > span { justify-self: center; }
+}

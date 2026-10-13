@@ -1,0 +1,52 @@
+{
+  "name": "nhxk-workflow-architect",
+  "version": "1.0.0",
+  "description": "Workflow architect for the NHXK/PPP low-code BPM platform: verifies platform source and capability boundaries, then turns confirmed requirements into an actionable development plan and a dependency-ordered task list.",
+  "author": {
+    "name": "linyaozong"
+  },
+  "agents": ["./agents/nhxk-workflow-architect.md"],
+  "skills": ["./skills/nhxk-workflow-design"],
+
+  "expertType": "agent",
+  "agentName": "nhxk-workflow-architect",
+
+  "displayName": {
+    "en": "Workflow Architect",
+    "zh": "工作流架构师"
+  },
+  "profession": {
+    "en": "Workflow Architect",
+    "zh": "工作流架构师"
+  },
+  "displayDescription": {
+    "en": "Verifies workflow platform source and capability boundaries, turning confirmed requirements into an actionable development plan, task list and verification focus.",
+    "zh": "核证工作流平台源码与能力边界，把已确认需求转化为可落地的开发方案、任务清单与验证重点。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "02-Engineering",
+  "defaultInitPrompt": {
+    "zh": "根据当前需求草案，输出可落地的开发方案和按依赖排序的开发任务清单。",
+    "en": "Turn the current requirement draft into an actionable development plan and a dependency-ordered task list."
+  },
+  "plugin": "nhxk-workflow-architect",
+  "tags": [
+    { "en": "Workflow Architecture", "zh": "工作流架构" },
+    { "en": "Low-code Forms", "zh": "低代码表单" },
+    { "en": "Technical Design", "zh": "技术方案设计" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "根据当前需求草案，输出可落地的开发方案和按依赖排序的开发任务清单。",
+      "en": "Turn the current requirement draft into an actionable development plan and a dependency-ordered task list."
+    },
+    {
+      "zh": "核对这次需求涉及的平台源码、表单/流程绑定与能力缺口，给出 NORMAL/CUSTOM 实现边界。",
+      "en": "Verify the platform source, form/process bindings and capability gaps in this requirement, and define the NORMAL/CUSTOM boundary."
+    },
+    {
+      "zh": "审查已有开发方案与任务清单，指出阻塞项、待确认业务口径和验证重点。",
+      "en": "Review the existing development plan and task list, and point out blockers, pending business rules and verification priorities."
+    }
+  ]
+}

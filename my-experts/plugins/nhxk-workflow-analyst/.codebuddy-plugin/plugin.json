@@ -1,0 +1,52 @@
+{
+  "name": "nhxk-workflow-analyst",
+  "version": "1.1.0",
+  "description": "Requirements analyst for the NHXK/PPP low-code BPM platform with two modes: business mode generates a runnable prototype (five-file set) plus a 16-chapter requirements.md with numbered acceptance criteria and confirms scope with the user; delivery-check mode reverse-checks developer documents against confirmed requirements for lost key points.",
+  "author": {
+    "name": "linyaozong"
+  },
+  "agents": ["./agents/nhxk-workflow-analyst.md"],
+  "skills": ["./skills/nhxk-workflow-requirements"],
+
+  "expertType": "agent",
+  "agentName": "nhxk-workflow-analyst",
+
+  "displayName": {
+    "en": "Workflow Requirements Analyst",
+    "zh": "工作流需求分析师"
+  },
+  "profession": {
+    "en": "Workflow Requirements Analyst",
+    "zh": "工作流需求分析师"
+  },
+  "displayDescription": {
+    "en": "Clarifies PPP/NHXK approval business requirements, checks fields, approvals, permissions and lifecycle rules, outputs confirmation records and hands off to architecture, without doing development or deployment.",
+    "zh": "按业务规则生成可运行原型与含验收标准的需求文档，逐条确认开发内容；反向核对开发交付是否遗失要点。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "02-Engineering",
+  "defaultInitPrompt": {
+    "zh": "根据业务规则生成可运行原型和含验收标准的需求文档，再和我逐条确认开发内容。",
+    "en": "Generate a runnable prototype and a requirements.md with acceptance criteria from the business rules, then confirm the development scope with me item by item."
+  },
+  "plugin": "nhxk-workflow-analyst",
+  "tags": [
+    { "en": "Requirements Analysis", "zh": "需求梳理" },
+    { "en": "Approval Workflow", "zh": "审批流程" },
+    { "en": "Requirement Confirmation", "zh": "确认单管理" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "根据业务规则生成可运行原型和含验收标准的需求文档，再和我逐条确认开发内容。",
+      "en": "Generate a runnable prototype and a requirements.md with acceptance criteria from the business rules, then confirm the development scope with me item by item."
+    },
+    {
+      "zh": "依据开发人员提供的交付文档，对照已确认需求核对要点是否遗失，并和开发人员确认差异。",
+      "en": "Reverse-check the developer-delivered documents against confirmed requirements for lost key points, and confirm discrepancies with the developer."
+    },
+    {
+      "zh": "按用户在原型上的最新确认调整 requirements.md 和原型，递增变更记录并同步修订号。",
+      "en": "Update requirements.md and the prototype per the user's latest confirmation on the prototype, bumping the change log and revision number."
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "name": "nhxk-workflow-team",
+  "version": "1.0.0",
+  "description": "Six-role NHXK/PPP workflow delivery team: an orchestrator lead coordinating requirements, architecture, development, QA and review experts through a gated full pipeline with per-role skills and shared standards bundled in one shareable package.",
+  "author": {
+    "name": "linyaozong"
+  },
+  "agents": [
+    "./agents/nhxk-workflow-team-team-lead.md",
+    "./agents/nhxk-workflow-analyst.md",
+    "./agents/nhxk-workflow-architect.md",
+    "./agents/nhxk-workflow-developer.md",
+    "./agents/nhxk-workflow-tester.md",
+    "./agents/nhxk-workflow-reviewer.md"
+  ],
+  "skills": [
+    "./skills/nhxk-workflow-requirements",
+    "./skills/nhxk-workflow-development",
+    "./skills/nhxk-workflow-design",
+    "./skills/nhxk-workflow-testing",
+    "./skills/nhxk-workflow-review",
+    "./skills/nhxk-workflow-orchestration"
+  ],
+
+  "expertType": "team",
+  "agentName": "nhxk-workflow-team-team-lead",
+  "teamInfo": {
+    "leadAgent": "nhxk-workflow-team-team-lead",
+    "memberAgents": [
+      "nhxk-workflow-analyst",
+      "nhxk-workflow-architect",
+      "nhxk-workflow-developer",
+      "nhxk-workflow-tester",
+      "nhxk-workflow-reviewer"
+    ]
+  },
+
+  "displayName": {
+    "en": "NHXK Workflow Delivery Team",
+    "zh": "NHXK工作流交付团队"
+  },
+  "profession": {
+    "en": "NHXK Workflow Delivery Team",
+    "zh": "NHXK工作流交付团队"
+  },
+  "displayDescription": {
+    "en": "One shareable team: an orchestrator lead drives requirements, architecture, development, QA and review roles through a gated full pipeline with bundled skills and shared standards.",
+    "zh": "一个可分享的六人工作流交付团队：总调度率需求、架构、开发、测试、审核，全流程门控推进。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "10-ProjectQuality",
+  "defaultInitPrompt": {
+    "zh": "根据需求文档或业务描述启动一个工作流任务，按全流程推进并告诉我每个阶段的门控点。",
+    "en": "Start a workflow task from the requirements document or business description, drive the full pipeline and tell me the gate points of each phase."
+  },
+  "plugin": "nhxk-workflow-team",
+  "tags": [
+    { "en": "Workflow Delivery", "zh": "工作流交付" },
+    { "en": "Multi-role Team", "zh": "多角色协作" },
+    { "en": "Quality Gates", "zh": "门控管理" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "根据需求文档或业务描述启动一个工作流任务，按全流程推进并告诉我每个阶段的门控点。",
+      "en": "Start a workflow task from the requirements document or business description, drive the full pipeline and tell me the gate points of each phase."
+    },
+    {
+      "zh": "这个任务只涉及某一环节（如测试/审核/需求核对），直接路由到对应角色处理，不跑全流程。",
+      "en": "This task only concerns one stage (e.g. testing/review/requirements check); route it directly to the right role without the full pipeline."
+    },
+    {
+      "zh": "查看当前任务的阶段进度、门控状态、阻塞项与下一责任角色。",
+      "en": "Show the current task's phase progress, gate status, blockers and the next responsible role."
+    }
+  ],
+  "members": [
+    {
+      "id": "nhxk-workflow-team-team-lead",
+      "displayName": { "en": "Team Lead / Orchestrator", "zh": "总调度 岑砚舟" },
+      "profession": { "en": "Workflow Team Orchestrator", "zh": "工作流团队总调度" },
+      "avatar": "avatars/nhxk-workflow-team-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "nhxk-workflow-analyst",
+      "displayName": { "en": "Requirements Analyst", "zh": "需求分析师 苏澄" },
+      "profession": { "en": "Workflow Requirements Analyst", "zh": "工作流需求分析师" },
+      "avatar": "avatars/nhxk-workflow-analyst.png",
+      "role": "member"
+    },
+    {
+      "id": "nhxk-workflow-architect",
+      "displayName": { "en": "Workflow Architect", "zh": "架构师 梁砚" },
+      "profession": { "en": "Workflow Architect", "zh": "工作流架构师" },
+      "avatar": "avatars/nhxk-workflow-architect.png",
+      "role": "member"
+    },
+    {
+      "id": "nhxk-workflow-developer",
+      "displayName": { "en": "Workflow Developer", "zh": "开发工程师 陈牧" },
+      "profession": { "en": "Workflow Developer", "zh": "工作流开发工程师" },
+      "avatar": "avatars/nhxk-workflow-developer.png",
+      "role": "member"
+    },
+    {
+      "id": "nhxk-workflow-tester",
+      "displayName": { "en": "Workflow QA Engineer", "zh": "测试工程师 林一苇" },
+      "profession": { "en": "Workflow QA Engineer", "zh": "工作流测试工程师" },
+      "avatar": "avatars/nhxk-workflow-tester.png",
+      "role": "member"
+    },
+    {
+      "id": "nhxk-workflow-reviewer",
+      "displayName": { "en": "Delivery Reviewer", "zh": "审核员 顾之澜" },
+      "profession": { "en": "Workflow Delivery Reviewer", "zh": "工作流交付审核员" },
+      "avatar": "avatars/nhxk-workflow-reviewer.png",
+      "role": "member"
+    }
+  ]
+}

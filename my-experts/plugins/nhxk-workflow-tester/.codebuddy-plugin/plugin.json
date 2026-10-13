@@ -1,0 +1,52 @@
+{
+  "name": "nhxk-workflow-tester",
+  "version": "1.1.0",
+  "description": "Workflow QA engineer for the NHXK/PPP low-code BPM platform: designs and executes E2E, API, regression and defect-reproduction tests with evidence, drives the defect-fix loop with the developer, and produces the final acceptance report (09) mapping every numbered acceptance criterion to test evidence.",
+  "author": {
+    "name": "linyaozong"
+  },
+  "agents": ["./agents/nhxk-workflow-tester.md"],
+  "skills": ["./skills/nhxk-workflow-testing"],
+
+  "expertType": "agent",
+  "agentName": "nhxk-workflow-tester",
+
+  "displayName": {
+    "en": "Workflow QA Engineer",
+    "zh": "工作流测试工程师"
+  },
+  "profession": {
+    "en": "Workflow QA Engineer",
+    "zh": "工作流测试工程师"
+  },
+  "displayDescription": {
+    "en": "Designs and runs PPP/NHXK workflow E2E, API, regression and defect-reproduction tests with traceable evidence; distinguishes written, passed, failed, skipped, blocked and not-run results.",
+    "zh": "设计并执行E2E接口与回归测试并留证，缺陷闭环后按验收标准逐条输出最终验收报告。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "10-ProjectQuality",
+  "defaultInitPrompt": {
+    "zh": "根据已确认需求和开发交付设计本次测试方案，把用例对应到需求编号和验收标准。",
+    "en": "Design the test plan for this confirmed requirement and delivery, mapping every case to requirement IDs and acceptance criteria."
+  },
+  "plugin": "nhxk-workflow-tester",
+  "tags": [
+    { "en": "E2E Testing", "zh": "端到端测试" },
+    { "en": "API Verification", "zh": "接口验证" },
+    { "en": "Test Evidence", "zh": "测试留痕" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "根据已确认需求和开发交付设计本次测试方案，把用例对应到需求编号和验收标准。",
+      "en": "Design the test plan for this confirmed requirement and delivery, mapping every case to requirement IDs and acceptance criteria."
+    },
+    {
+      "zh": "执行本轮测试并按运行编号留证，区分实际通过、失败、跳过、阻塞与未执行，写 06-测试报告.md。",
+      "en": "Execute this test round with run-numbered evidence, distinguishing passed, failed, skipped, blocked and not-run, and write 06-测试报告.md."
+    },
+    {
+      "zh": "缺陷闭环通过后，按需求文档验收标准逐条映射证据，输出 09-验收报告.md。",
+      "en": "After the defect loop closes, map every numbered acceptance criterion to evidence and produce 09-验收报告.md."
+    }
+  ]
+}

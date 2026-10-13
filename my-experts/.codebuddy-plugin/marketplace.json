@@ -1,0 +1,41 @@
+{
+  "name": "my-experts",
+  "description": "my-experts marketplace (auto-generated)",
+  "plugins": [
+    {
+      "name": "nhxk-workflow-reviewer",
+      "source": "./plugins/nhxk-workflow-reviewer",
+      "description": "Workflow delivery reviewer for the NHXK/PPP low-code BPM platform: audits requirements, designs, code and test evidence against confirmed acceptance criteria, records 07-审核记录.md, and never replaces business approvers."
+    },
+    {
+      "name": "nhxk-workflow-tester",
+      "source": "./plugins/nhxk-workflow-tester",
+      "description": "Workflow QA engineer for the NHXK/PPP low-code BPM platform: designs and executes E2E, API, regression and defect-reproduction tests with evidence, drives the defect-fix loop with the developer, and produces the final acceptance report (09) mapping every numbered acceptance criterion to test evidence."
+    },
+    {
+      "name": "nhxk-workflow-developer",
+      "source": "./plugins/nhxk-workflow-developer",
+      "description": "Workflow developer for the NHXK/PPP low-code BPM platform: implements confirmed requirements by generating form-create compatible conf/fields, SIMPLE JSON or BPMN XML, or CUSTOM layered code, and records delivery evidence per task."
+    },
+    {
+      "name": "nhxk-workflow-orchestrator",
+      "source": "./plugins/nhxk-workflow-orchestrator",
+      "description": "Orchestrator for the NHXK/PPP five-role workflow expert team: drives the full pipeline (requirements → architecture → user review gate → development → requirements reverse-check → testing with defect loop → review) by spawning role subagents injected with each expert package's own MD, without duplicating role knowledge."
+    },
+    {
+      "name": "nhxk-workflow-analyst",
+      "source": "./plugins/nhxk-workflow-analyst",
+      "description": "Requirements analyst for the NHXK/PPP low-code BPM platform with two modes: business mode generates a runnable prototype (five-file set) plus a 16-chapter requirements.md with numbered acceptance criteria and confirms scope with the user; delivery-check mode reverse-checks developer documents against confirmed requirements for lost key points."
+    },
+    {
+      "name": "nhxk-workflow-architect",
+      "source": "./plugins/nhxk-workflow-architect",
+      "description": "Workflow architect for the NHXK/PPP low-code BPM platform: verifies platform source and capability boundaries, then turns confirmed requirements into an actionable development plan and a dependency-ordered task list."
+    },
+    {
+      "name": "nhxk-workflow-team",
+      "source": "./plugins/nhxk-workflow-team",
+      "description": "Six-role NHXK/PPP workflow delivery team: an orchestrator lead coordinating requirements, architecture, development, QA and review experts through a gated full pipeline with per-role skills and shared standards bundled in one shareable package."
+    }
+  ]
+}

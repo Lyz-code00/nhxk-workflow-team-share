@@ -1,0 +1,26 @@
+.monthly-form-surface .document-period-input { width: min(100%, calc((100% - 336px) / 3)); min-height: 38px; font-size: 13px; }
+.monthly-form-surface .document-period-input[readonly] { color: #667587; background: #f1f4f8; border-color: #e0e6ee; }
+.monthly-form-surface .application-field > span { display: flex; justify-content: flex-end; align-items: center; }
+.monthly-document-editor .annual-editor-paper h3 { margin: 0; font-family: "KaiTi", "楷体", serif; font-size: 14pt; font-weight: 400; line-height: 26pt; text-indent: 28pt; }
+.monthly-document-editor .annual-editor-dialog:has(.annual-editor-paper.readonly) { grid-template-rows: 44px 28px minmax(0, 1fr) 48px; }
+.monthly-document-editor .annual-editor-scroll { grid-column: 2; min-width: 0; }
+.monthly-receivable-section { margin-bottom: 18px; }
+.monthly-receivable-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px 24px; padding: 20px; }
+.monthly-receivable-field { display: grid; grid-column: auto; grid-template-columns: 130px minmax(0, 342px); column-gap: 14px; align-items: start; }
+.monthly-receivable-field:nth-child(1) { grid-column: 1; grid-row: 1; }
+.monthly-receivable-field:nth-child(2) { grid-column: 2; grid-row: 1; }
+.monthly-receivable-field:nth-child(3) { grid-column: 1; grid-row: 2; }
+.monthly-receivable-field:nth-child(4) { grid-column: 2; grid-row: 2; }
+.monthly-receivable-field:nth-child(5) { grid-column: 1; grid-row: 3; }
+.monthly-receivable-field:nth-child(6) { grid-column: 2; grid-row: 3; }
+.monthly-receivable-field:nth-child(7) { grid-column: 3; grid-row: 3; }
+.monthly-receivable-field > label { display: flex; align-items: center; justify-content: flex-end; min-height: 38px; color: #505e6f; font-size: 14px; font-weight: 500; }
+.monthly-receivable-control { min-width: 0; }
+.monthly-receivable-value { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; align-items: center; }
+.monthly-receivable-value input { min-width: 0; width: min(100%, 342px); min-height: 38px; color: #334155; background: #fff; border-color: #d7e0eb; font-size: 13px; }
+.monthly-receivable-value input[readonly] { color: #667587; background: #f1f4f8; border-color: #e0e6ee; }
+.monthly-receivable-value > span { color: #66758a; font-size: 13px; }
+@media (max-width: 1200px) { .monthly-receivable-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .monthly-receivable-grid > .monthly-receivable-field { grid-column: auto; grid-row: auto; grid-template-columns: 130px minmax(0, 1fr); } }
+@media (max-width: 620px) { .monthly-receivable-grid { grid-template-columns: minmax(0, 1fr); padding: 16px; } .monthly-receivable-grid > .monthly-receivable-field { grid-template-columns: minmax(0, 1fr); row-gap: 6px; } .monthly-receivable-field > label { justify-content: flex-start; min-height: 0; } }
+@media (max-width: 1100px) { .monthly-form-surface .document-period-input { width: min(100%, calc((100% - 168px) / 2)); } }
+@media (max-width: 760px) { .monthly-form-surface .document-period-input { width: 100%; } .monthly-form-surface .application-field > span { justify-content: flex-start; } }

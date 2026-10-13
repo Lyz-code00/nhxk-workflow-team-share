@@ -1,0 +1,52 @@
+{
+  "name": "nhxk-workflow-orchestrator",
+  "version": "1.0.0",
+  "description": "Orchestrator for the NHXK/PPP five-role workflow expert team: drives the full pipeline (requirements → architecture → user review gate → development → requirements reverse-check → testing with defect loop → review) by spawning role subagents injected with each expert package's own MD, without duplicating role knowledge.",
+  "author": {
+    "name": "linyaozong"
+  },
+  "agents": ["./agents/nhxk-workflow-orchestrator.md"],
+  "skills": ["./skills/nhxk-workflow-orchestration"],
+
+  "expertType": "agent",
+  "agentName": "nhxk-workflow-orchestrator",
+
+  "displayName": {
+    "en": "Workflow Team Orchestrator",
+    "zh": "工作流团队总调度"
+  },
+  "profession": {
+    "en": "Workflow Team Orchestrator",
+    "zh": "工作流团队总调度"
+  },
+  "displayDescription": {
+    "en": "Coordinates the five workflow experts through the full pipeline with user review gates and defect routing, spawning each role from its own expert package without duplicating role knowledge.",
+    "zh": "统筹五个工作流专家跑全流程：按阶段调度角色，守审阅与部署门控，路由缺陷闭环，不复制角色知识。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "10-ProjectQuality",
+  "defaultInitPrompt": {
+    "zh": "根据需求文档或业务描述启动一个工作流任务，按全流程推进并告诉我每个阶段的门控点。",
+    "en": "Start a workflow task from the requirements document or business description, drive the full pipeline and tell me the gate points of each phase."
+  },
+  "plugin": "nhxk-workflow-orchestrator",
+  "tags": [
+    { "en": "Pipeline Orchestration", "zh": "全流程编排" },
+    { "en": "Multi-role Coordination", "zh": "多角色协同" },
+    { "en": "Quality Gates", "zh": "门控管理" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "根据需求文档或业务描述启动一个工作流任务，按全流程推进并告诉我每个阶段的门控点。",
+      "en": "Start a workflow task from the requirements document or business description, drive the full pipeline and tell me the gate points of each phase."
+    },
+    {
+      "zh": "这个任务只涉及某一环节（如测试/审核/需求核对），直接路由到对应角色处理，不跑全流程。",
+      "en": "This task only concerns one stage (e.g. testing/review/requirements check); route it directly to the right role without the full pipeline."
+    },
+    {
+      "zh": "查看当前任务的阶段进度、门控状态、阻塞项与下一责任角色。",
+      "en": "Show the current task's phase progress, gate status, blockers and the next responsible role."
+    }
+  ]
+}

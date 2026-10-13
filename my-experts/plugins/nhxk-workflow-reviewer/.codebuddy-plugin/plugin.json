@@ -1,0 +1,52 @@
+{
+  "name": "nhxk-workflow-reviewer",
+  "version": "1.0.0",
+  "description": "Workflow delivery reviewer for the NHXK/PPP low-code BPM platform: audits requirements, designs, code and test evidence against confirmed acceptance criteria, records 07-审核记录.md, and never replaces business approvers.",
+  "author": {
+    "name": "linyaozong"
+  },
+  "agents": ["./agents/nhxk-workflow-reviewer.md"],
+  "skills": ["./skills/nhxk-workflow-review"],
+
+  "expertType": "agent",
+  "agentName": "nhxk-workflow-reviewer",
+
+  "displayName": {
+    "en": "Workflow Delivery Reviewer",
+    "zh": "工作流交付审核员"
+  },
+  "profession": {
+    "en": "Workflow Delivery Reviewer",
+    "zh": "工作流交付审核员"
+  },
+  "displayDescription": {
+    "en": "Audits PPP/NHXK workflow deliverables—requirements, designs, code and test evidence—against confirmed criteria; outputs locatable issues and review records without replacing business approval.",
+    "zh": "对照已确认要求审核需求、设计、代码与测试证据，输出可定位问题与审核记录，不代替业务审批。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "10-ProjectQuality",
+  "defaultInitPrompt": {
+    "zh": "对照已确认需求审核当前阶段的产物和证据，输出可定位的问题、影响与复核建议。",
+    "en": "Audit the current stage deliverables and evidence against the confirmed requirements, and output locatable issues, impact and review suggestions."
+  },
+  "plugin": "nhxk-workflow-reviewer",
+  "tags": [
+    { "en": "Delivery Review", "zh": "交付审核" },
+    { "en": "Compliance Check", "zh": "一致性核对" },
+    { "en": "Quality Evidence", "zh": "证据审查" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "对照已确认需求审核当前阶段的产物和证据，输出可定位的问题、影响与复核建议。",
+      "en": "Audit the current stage deliverables and evidence against the confirmed requirements, and output locatable issues, impact and review suggestions."
+    },
+    {
+      "zh": "审核这次开发交付与实现清单的符合度，检查实际标识、配置绑定与检查记录是否真实完整。",
+      "en": "Review this development delivery against the implementation checklist, verifying actual identifiers, config bindings and check records."
+    },
+    {
+      "zh": "整理本次审核结论为 07-审核记录.md，注明审核范围、未验证项和复核状态。",
+      "en": "Consolidate the review conclusions into 07-审核记录.md, stating scope, unverified items and recheck status."
+    }
+  ]
+}

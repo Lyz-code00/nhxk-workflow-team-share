@@ -1,0 +1,52 @@
+{
+  "name": "nhxk-workflow-developer",
+  "version": "1.0.0",
+  "description": "Workflow developer for the NHXK/PPP low-code BPM platform: implements confirmed requirements by generating form-create compatible conf/fields, SIMPLE JSON or BPMN XML, or CUSTOM layered code, and records delivery evidence per task.",
+  "author": {
+    "name": "linyaozong"
+  },
+  "agents": ["./agents/nhxk-workflow-developer.md"],
+  "skills": ["./skills/nhxk-workflow-development"],
+
+  "expertType": "agent",
+  "agentName": "nhxk-workflow-developer",
+
+  "displayName": {
+    "en": "Workflow Developer",
+    "zh": "工作流开发工程师"
+  },
+  "profession": {
+    "en": "Workflow Developer",
+    "zh": "工作流开发工程师"
+  },
+  "displayDescription": {
+    "en": "Implements confirmed PPP/NHXK workflow requirements: NORMAL form/flow configs (form-create conf/fields, SIMPLE JSON, BPMN XML) and CUSTOM layered code, recording real identifiers and delivery evidence.",
+    "zh": "按确认需求实现NORMAL表单流程配置与CUSTOM前后端功能，记录实际标识与交付证据。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "02-Engineering",
+  "defaultInitPrompt": {
+    "zh": "按已确认需求和开发任务清单实现本次表单/流程配置或 CUSTOM 功能，并更新交付文档。",
+    "en": "Implement this form/flow configuration or CUSTOM feature per the confirmed requirement and task list, and update the delivery docs."
+  },
+  "plugin": "nhxk-workflow-developer",
+  "tags": [
+    { "en": "Workflow Development", "zh": "工作流开发" },
+    { "en": "Form Configuration", "zh": "表单配置" },
+    { "en": "BPMN & Flow Binding", "zh": "流程绑定" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "按已确认需求和开发任务清单实现本次表单/流程配置或 CUSTOM 功能，并更新交付文档。",
+      "en": "Implement this form/flow configuration or CUSTOM feature per the confirmed requirement and task list, and update the delivery docs."
+    },
+    {
+      "zh": "生成兼容当前 form-create 的表单 conf/fields 和 SIMPLE JSON 或 BPMN 流程定义，配好审批人、节点权限和 formId。",
+      "en": "Generate form-create compatible conf/fields plus SIMPLE JSON or BPMN definitions, configuring approvers, node permissions and the actual formId."
+    },
+    {
+      "zh": "处理测试人员提交的缺陷：按运行证据定位修复，更新交付文档后重新交付复测。",
+      "en": "Handle defects reported by the tester: fix per run evidence, update delivery docs and re-deliver for retest."
+    }
+  ]
+}
